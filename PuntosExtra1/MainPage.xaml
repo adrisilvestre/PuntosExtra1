@@ -4,13 +4,65 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="PuntosExtra1.MainPage">
+             x:Class="PuntosExtra1.MainPage"
+             BackgroundImageSource="fondosol.png" Title= "Hola">
+    <ScrollView>
+        <StackLayout>
+            <Grid BackgroundColor="Gold" VerticalOptions="Start"> <!--Creo que aqui va un navbar :c -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="85*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="ClimaRD" HorizontalOptions="Center"  FontFamily="Times New Roman"/>
+                <Button BackgroundColor="Transparent" ImageSource="info" Grid.Row="0" Grid.Column="0" HorizontalOptions="End"/>
+            </Grid>
+            
+            <Grid Padding="20" x:Name="GridTop">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+                <Image Source="banner" Grid.Column="0" Grid.Row="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="175*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100*"/>
+                </Grid.ColumnDefinitions>
+                
+
+
+            </Grid>
+
+            <Grid Margin="40"
+              HorizontalOptions="CenterAndExpand"
+              ColumnSpacing="15"
+              RowSpacing="15" Opacity="0.7" >
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100*"/>
+                    <RowDefinition Height="100*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name= "Button1" Text="Sto. Dgo." CornerRadius="8" Grid.Row="0" Grid.Column="0" 
+                    BackgroundColor= "BlanchedAlmond" ContentLayout="Top"  ImageSource="ic_launcher"/>
+                <Button x:Name= "Button2" Text="Samana" CornerRadius="8" Grid.Row="0" Grid.Column="1" 
+                    BackgroundColor= "BlanchedAlmond" ContentLayout="Top" ImageSource="ic_launcher"/>
+                <Button x:Name= "Button3" Text="Santiago" CornerRadius="8" Grid.Row="1" Grid.Column="0" 
+                    BackgroundColor= "BlanchedAlmond" ContentLayout="Top" ImageSource="ic_launcher"/>
+                <Button x:Name= "Button4" Text="La Romana" CornerRadius="8" Grid.Row="1" Grid.Column="1" 
+                    BackgroundColor= "BlanchedAlmond" ContentLayout="Top" ImageSource="ic_launcher"/>
+
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+    
+
+    
 
 </ContentPage>

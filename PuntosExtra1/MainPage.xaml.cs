@@ -16,6 +16,7 @@ namespace PuntosExtra1
         public MainPage()
         {
             InitializeComponent();
+            
         }
     }
 }
